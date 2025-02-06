@@ -1,0 +1,29 @@
+using System;
+
+namespace atv7
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Insira um número inteiro:\n");
+            int numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Números pares de 0 até " + numero + ":");
+            
+            int i = 0;
+            while (i < numero) 
+            {
+                if (i % 2 == 0) 
+                {
+                    Console.WriteLine(i);
+                }
+                i++; 
+
+            
+        }
+            Console.Write("Press any key to continue . . . ");
+            Console.ReadKey(true);
+    }
+
+    }
+}
