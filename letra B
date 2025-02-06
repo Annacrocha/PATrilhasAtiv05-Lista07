@@ -10,12 +10,14 @@ namespace atv7
             int numero = int.Parse(Console.ReadLine());
             Console.WriteLine("Tabuada do número " + numero + ":");
             
-            int i = 1;
+            int i = 0;
             while (i <= 10 ) 
             {
-                    Console.WriteLine(i + " x " + numero + " = " + (i * numero));
+                    int resultado = i * numero;
+                    Console.WriteLine(numero + " x " + i + "=" + resultado);
+                     i++; 
                 }
-                i++; 
+               
 
              Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
